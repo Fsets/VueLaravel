@@ -1,26 +1,26 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+<header class="p-3 bg-dark text-white">
     <div class="container">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item active">
-                    <router-link to="/" class="nav-link">Home</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link to="/productTable" class="nav-link">Show Products</router-link>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Admin Productos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <router-link to="{ name: 'addProduct' } " class="dropdown-item">
-                            <span class="menu-text color-white">Add Product</span>
-                        </router-link>
-                    <a class="dropdown-item" href="#">Show Admin Panel</a>
-                    </div>
-                </li>
-            </ul>
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><router-link to="/" class="nav-link px-2 text-secondary">Home</router-link></li>
+          <li><router-link to="/productTable" class="nav-link px-2 text-white">Show Products</router-link></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2"><router-link to="/Login">Login</router-link></button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
         </div>
+      </div>
     </div>
-</nav>
+  </header>

@@ -13,6 +13,7 @@ import { createApp } from "vue";
 import { createRouter, createWebHashHistory } from 'vue-router'
 import exampleComponent from './components/ExampleComponent.vue'
 import productTable from './components/productTable.vue'
+import loginComponent from './components/login.vue'
 
 //añadir rutas
 const routes = [{
@@ -22,6 +23,10 @@ const routes = [{
     {
         path: '/productTable',
         component: productTable,
+    },
+    {
+        path: '/Login',
+        component: loginComponent,
     }
 ]
 
@@ -35,6 +40,7 @@ const app = createApp({})
 //con esto lo uso desde donde quiera con la etiqueta <exampleComponent></exampleComponent>
 app.component('example-component', exampleComponent)
     .component('product-table', productTable)
+    .component('login-component', loginComponent)
 
 app.use(router)
 app.mount('#app') //monta la aplicacion
